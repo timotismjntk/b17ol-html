@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+    display: flex;
+}
+.navbar .navbar-brand .logo {
+    width: 100%;
+    height: auto;
+}
+
+.navbar .navbar-brand .namaBrand {
+    color: #DB3022;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 5px;
+    margin-top: 1px;
+    /* line-height: 10px; */
+} 

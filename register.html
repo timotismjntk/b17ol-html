@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Register Page || Blanja</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img class="logo" src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <span class="namaBrand">Blanja</span>
+    </nav>
+    <h1 class="loginTeks">Please sign up with your account</h1>
+    <!-- section button for change to user or seller-->
+    <div class="btn">
+        <button class="btn-1" id="1" onclick="ubah2()">Customer</button>
+        <button class="btn-2" id="2" onclick="ubah1()">Seller</button>
+    </div>
+    <div class="myForm">
+        <div class="form" id="form1">
+            <input type="text" placeholder="Name" class="form-control"/>
+            <input type="email" placeholder="Email" class="form-control"/>
+            <input type="password" placeholder="Password" class="form-control"/>
+        </div>
+        <div class="form" id="form2">
+            <input type="text" placeholder="Name" class="form-control"/>
+            <input type="email" placeholder="Email" class="form-control"/>
+            <input type="phone" placeholder="Phone Number" class="form-control"/>
+            <input type="text" placeholder="Store Name" class="form-control"/>
+            <input type="password" placeholder="Password" class="form-control"/>
+        </div>
+    </div>
+    <div class="login">
+        <button class="btn-login"><a href="login.html">Primary</a></button>
+    </div>
+    <div class="questionValidation">
+        <span class="description">Already have a Tokopedia account?</span><span class="question"><a href="login.html">Login</a></span>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    function ubah1 (){
+        document.getElementById("1").style.backgroundColor = "#ffffff";
+        document.getElementById("1").style.color = "#9B9B9B";
+        document.getElementById("2").style.color = "#ffffff";
+        document.getElementById("2").style.backgroundColor = "#DB3022";
+        document.getElementById("form2").style.display = "flex";
+        document.getElementById("form1").style.display = "none";
+    }
+    function ubah2 () {
+        document.getElementById("2").style.backgroundColor = "#ffffff";
+        document.getElementById("2").style.color = "#9B9B9B";
+        document.getElementById("1").style.color = "#ffffff";
+        document.getElementById("1").style.backgroundColor = "#DB3022";
+        document.getElementById("form1").style.display = "flex";
+        document.getElementById("form2").style.display = "none";
+    }
+</script>
+</html>
