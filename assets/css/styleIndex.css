@@ -1,9 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    margin: 0px auto;
+    position: relative;
 }
 
 .navbar {
+    height: 100%;
+    width: auto;
     display: flex;
+    position: relative;
     justify-content: space-evenly;
     box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
     padding: 15px;
@@ -37,6 +45,7 @@ body {
 }
 
 .navbar-search input{
+    position: relative;
     height: 5px;
     width: 410px;
     border: 1px solid #9B9B9B;
@@ -46,14 +55,16 @@ body {
 }
 
 .navbar-search #searchicon{
-    position: relative;
-    right: 35px;
+    position: absolute;
+    right: 630px;
     color: #DADADA;
+    transform: translateX(50%);
 }
 .navbar-search .btn-filter1{
     position: relative;
-    right: 15px;
+    right: 5px;
     height: 36px;
+    transform: translateX(50%);
     border-radius: 10px;
     border: 1px solid #9B9B9B;
     background-color: #ffffff;
@@ -105,8 +116,8 @@ body {
 }
 
 .container {
-    margin-top: -40px;
-    padding:85px ;
+    /* margin-top: -40px; */
+    padding:30px 85px 85px 85px ;
 }
 
 .productSlider{
@@ -125,43 +136,43 @@ body {
 }
 .cardcaption {
     position: absolute;
-    top: 35%;
-    right: 50%;
+    top: 5.6%;
+    right: 46.3%;
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 4px;
     transform: translate(-50%, -50%);
   }
 
   .cardcaption1 {
     position: absolute;
-    top: 35%;
-    right: 12%;
+    top: 5.6%;
+    right: 10.5%;
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 4px;
     transform: translate(-50%, -50%);
   }
 
   .left-arrow{
     position: absolute;
-    top: 35%;
-    right: 83%;
+    top: 5.6%;
+    right: 82.4%;
     transform: translate(-50%, -50%);
   }
 
   .right-arrow{
     position: absolute;
-    top: 35%;
-    right: 6.5%;
+    top: 5.6%;
+    right: 6.7%;
     transform: translate(-50%, -50%);
   }
 
   .dotList{
     position: absolute;
-    top: 52%;
+    top: 8.6%;
     left: 8.7%;
     transform: translate(-50%, -50%);
   }
@@ -173,10 +184,11 @@ body {
   }
 
  .main {
-    margin-top: 70px
+    margin-top: 60px;
+    position: relative;
   }
   .main .category {
-    margin-bottom: 15px;
+    margin-bottom: 1px;
     font-size:34;
     color: #222222
   }
@@ -186,6 +198,8 @@ body {
   }
 
   .distroSlider{
+    margin-left: 10px;
+    /* position: inline-block; */
     display: inline-grid;
     justify-items: center;
     /* padding-left: -15px; */
@@ -262,16 +276,16 @@ body {
 
 .right-arrow2 {
     position: absolute;
-    top: 92%;
-    right: 3.5%;
+    top: 15.7%;
+    right: 3.2%;
     transform: translate(-50%, -50%);
 }
 
 
 .cardcaptionDistro1 {
     position: absolute;
-    top: 91.2%;
-    right: 74.6%;
+    top: 15.5%;
+    right: 75%;
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -280,7 +294,7 @@ body {
   }
 .cardcaptionDistro2 {
     position: absolute;
-    top: 91.2%;
+    top: 15.5%;
     right: 58.4%;
     color: white;
     font-weight: bolder;
@@ -290,7 +304,7 @@ body {
   }
 .cardcaptionDistro3 {
     position: absolute;
-    top: 91.2%;
+    top: 15.5%;
     right: 41.5%;
     color: white;
     font-weight: bolder;
@@ -300,8 +314,8 @@ body {
   }
 .cardcaptionDistro4 {
     position: absolute;
-    top: 545%;
-    right:310%;
+    top: 15.5%;
+    right:26%;
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -311,8 +325,8 @@ body {
 
 .cardcaptionDistro5 {
     position: absolute;
-    top: 45%;
-    right: 50%;
+    top: 15.5%;
+    right: 8%;
     color: white;
     font-weight: bolder;
     font-size: 20px;
